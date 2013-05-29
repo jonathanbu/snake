@@ -48,6 +48,7 @@ turnpointx=x;
 turnpointy=y;
 turndir=4;
 }
+}if(turndir==1&&x=turnpointx&&y==turnpointy){
+x=x+7;
 }
-
 }
