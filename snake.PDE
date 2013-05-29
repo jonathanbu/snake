@@ -1,4 +1,8 @@
 direction=0;
+turnpointx=0;
+turnpointy=0;
+turndir=0;
+turndir=0;
 x=250;
 y=250;
 void Setup() {
@@ -26,4 +30,24 @@ x--;
 x++;
 }
 rect(x, y, 7, 7);
+if(keyPressed==true){
+if(key=='w'){
+turnpointx=x;
+turnpointy=y;
+turndir=1;
+}if(key=='s'){
+turnpointx=x;
+turnpointy=y;
+turndir=2;
+}if(key=='a'){
+turnpointx=x;
+turnpointy=y;
+turndir=3;
+}if(key=='d'){
+turnpointx=x;
+turnpointy=y;
+turndir=4;
+}
+}
+
 }
